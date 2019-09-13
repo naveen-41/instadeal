@@ -1,0 +1,312 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/* My code */
+* {
+    text-decoration: none;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+
+header .header-logo{
+    font-family: Catamaran;
+    font-size: 24px;
+    color: #111;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding: 20px 0px;
+    
+}
+
+header nav ul{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+header nav ul li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0px 16px;
+    
+}
+header nav ul li a{
+    font-family: Catamaran;
+    font-size: 18px;
+    color: #111;
+    font-weight: 0;
+}
+header .header-login{
+    display: none;
+}
+
+/* for desktop view*/
+@media only screen and (min-width: 1000px){
+
+
+    header .header-logo{
+        margin:31px 0;
+        text-align:left;
+        line-height: 38px;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        float:left;
+        
+    }
+
+
+    header nav ul{
+        margin: 0;
+        float: left;
+    }
+    header nav ul li{
+        line-height: 30px;
+        margin: 35px 0 35px 20px;
+    }
+    header nav ul li a{
+        text-transform: uppercase;
+    }
+
+    header .header-login{
+        display: block;
+        float: right;
+        font-family: Catamaran;
+        font-size: 18px;
+        color: #111;
+        font-weight: 0;
+        border: 0.7px solid #111;
+        line-height: 30px;
+        margin: 35px 40px 35px 0;
+        padding: 0 20px;
+    }
+
+}
+
+
+
+
+/*main Section */
+
+
+.index-banner{
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url("adult-chill-connection-450271.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.vertical-align{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h1{
+    font-family: Cinzel Decorative;
+    font-weight: 900;
+    color: #fff;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    text-shadow: 4px 4px 6px #111;
+    
+}
+.index-banner h2{
+    font-family: Cinzel Decorative;
+    font-weight: 100;
+    color: #fff;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 3px #111;
+
+}
+
+.index-box div{
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-color: #f3f3f3;
+}
+
+.index-box div h3{
+    font-family: Catamaran;
+    font-weight: 700;
+    color: #111;
+    font-size: 21px;
+    line-height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+@media only screen and (min-width: 1000px){
+    .index-banner{
+        width: 100%;
+        height: 400px;
+        background-image: url("adult-chill-connection-450271.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: table;
+    }
+}
+
+
+
+
+
+
+/*footer Section */
+
+footer{
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    background-color: #111;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+footer ul{
+    width: fit-content;
+    float: left;
+    padding-left:20px;
+}
+
+footer ul li{
+    display: block;
+    list-style: none;
+    line-height: 20px;
+    
+}
+
+footer ul li a{
+    font-family: Catamaran;
+    font-size: 18px;
+    color: #fff;
+    line-height: 50px;
+
+    
+}
+
+.footer-menu2{
+    display: none;
+}
+
+.footer-sm{
+    width: 60px;
+    float: right;
+}
+footer a img{
+    width: 50px;
+    height: 50px;
+    padding: 7px;
+}
+
