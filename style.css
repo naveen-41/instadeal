@@ -236,6 +236,7 @@ header .header-login{
     background-color: #f3f3f3;
 }
 
+
 .index-box div h3{
     font-family: Catamaran;
     font-weight: 700;
@@ -249,19 +250,34 @@ header .header-login{
 
 @media only screen and (min-width: 1000px){
     .index-banner{
-        width: 100%;
         height: 400px;
-        background-image: url("adult-chill-connection-450271.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        display: table;
     }
+    .wrapper{
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .index-box div{
+        margin: 20px 10px 0;
+        height: 180px;
+        float: left;
+    }
+    .box-square{
+        width: calc(25% - 20px) !important;
+        height: 180px;
+    }    
+    .rectangle{
+        width: calc(50% - 20px) !important;
+
+    }
+    .index-box{
+        overflow: hidden;
+    }
+    .index-box div h3{
+        line-height: 180px;
+    }
+
 }
-
-
-
-
 
 
 /*footer Section */
@@ -301,8 +317,11 @@ footer ul li a{
 }
 
 .footer-sm{
-    width: 60px;
+    display: inline-block;
+    width: 50px;
     float: right;
+    
+    
 }
 footer a img{
     width: 50px;
@@ -310,3 +329,19 @@ footer a img{
     padding: 7px;
 }
 
+@media only screen and (min-width: 1000px){
+    .footer-menu2{
+        display: block;
+        font-family: Catamaran;
+        margin: 20px 0 0 100px;
+        width: fit-content;
+        
+    }
+    
+    
+        footer div ul p{
+        color: #fff;
+        font-size: 18px;
+
+    }
+}
